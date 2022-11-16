@@ -1,0 +1,336 @@
+{
+	"lang": {
+		"en": "ua", 
+		"ua": "en"
+	},
+	"lang_html": {
+		"en": "en-EN", 
+		"ua": "ua-UA"
+	},
+	"locale": {
+		"en": "en_EN", 
+		"ua": "ua_UA"
+	},
+	"title": {
+		"en": "Ukrainians United", 
+		"ua": "Українці Єдині"
+	},
+	"description": {
+		"en": "A fundraising line is opened for the help Ukrainians and reconstruction of cities and towns of Ukraine with the support of Ukrainian and international companies",
+		"ua": "Відкрито лінію для збору коштів для допомоги населенню України, відновлення міст та селищ за підтримки українських та міжнародних компаній"
+	},
+	"keywords": {
+		"en": "Ukrainians United, Save Ukrainian, Funds, Help Ukrainians, Rebuild Ukraine",
+		"ua": "Українці Єдині, Допомога Українцям, Допомога, Фонд допомоги, Допомога населенню, Україна єдина"
+	},
+	"button-donate": {
+		"en": "Donate", 
+		"ua": "Допомогти"
+	},
+	"button-send": {
+		"en": "Send", 
+		"ua": "Відправити"
+	},
+	"required": {
+		"en": "Required field",
+		"ua": "Обов’язкове поле"
+	},
+	"non-required": {
+		"en": "Non-Required field",
+		"ua": "Необов’язкове поле"
+	},
+	"firstname": {
+	"en": "Enter your name",
+	"ua": "Введіть ваше ім'я"
+	},
+	"lastname": {
+	"en": "Enter your surname",
+	"ua": "Введіть ваше прізвище"
+	},
+	"fullname": {
+	"en": "Enter your fullname",
+	"ua": "Введіть ваше ім'я та прізвище"
+	},
+	"email": {
+	"en": "Enter your email",
+	"ua": "Введіть ваш email"
+	},
+	"organization": {
+	"en": "Enter organization's name",
+	"ua": "Введіть назву організації"
+	},
+	"funds_for": {
+	"en": "Enter what you need funds for",
+	"ua": "Введіть для чого потрібні кошти"
+	},
+	"text-banner": {
+		"h1": {
+			"en": "We will help ukrainians<br>and bring the beauty to<br>wiped out cities and villages", 
+			"ua": "Допоможемо українцям<br>та повернемо красу<br>містам, стертим з лиця землі!"
+		},
+		"p": {
+			"en": "A fundraising line is opened for the help<br>Ukrainians and reconstruction of cities and<br>towns of Ukraine with the support of Ukrainian<br>and international companies", 
+			"ua": "Відкрито лінію для збору коштів для допомоги<br>населенню України, відновлення міст та селищ<br>за підтримки українських та міжнародних<br>компаній"
+		}
+	},
+	"fund-do": {
+		"h2": {
+			"en": "About the fund", 
+			"ua": "Про фонд"
+		},
+		"p": {
+			"en": "\"United Ukrainians\" was founded in 2014 after the Russian occupation of Ukraine. Since the<br>beginning of Russia's full-scale aggression on February 24, 2022, the occupiers have<br>targeted peaceful civilian infrastructure. Our charity fund not only provides humanitarian aid<br>and rebuilds what has been destroyed, but also implements modern architectural solutions<br>that take into account the principles of energy efficiency and innovativeness.", 
+			"ua": "Благодійний фонд «Українці Єдині» засновано ще у 2014 році після окупації росіянами<br>території України. З початку повномасштабної агресії росії 24 лютого 2022 року цілями<br>окупантів стали мирні цивільні об’єкти інфраструктури.<br><br>Наш благодійний фонд не тільки займається гуманітарною допомогою та відновлює<br>зруйноване, але й реалізовує сучасні архітектурні рішення, у яких враховані принципи<br>енергоефективності, безбар’єрності та інноваційності."
+		}
+	},
+	"slider": {
+		"h2": {
+			"en": "Let’s rebuild Ukraine together!", 
+			"ua": "Відбудуємо Україну разом!"
+		}
+	},
+	"image-span": {
+		"Irpin": {
+			"en": "Irpin", 
+			"ua": "Ірпінь"
+		},
+		"Kharkiv": {
+			"en": "Kharkiv", 
+			"ua": "Харків"
+		},
+		"Chernihiv": {
+			"en": "Chernihiv", 
+			"ua": "Чернігів"
+		},
+		"Mariupol": {
+			"en": "Mariupol", 
+			"ua": "Маріуполь"
+		},
+		"Bucha": {
+			"en": "Bucha", 
+			"ua": "Буча"
+		},
+		"Borodyanka": {
+			"en": "Borodyanka", 
+			"ua": "Бородянка"
+		}
+	},
+	"activities": {
+		"h2": {
+			"en": "Activities",
+			"ua": "Напрямки діяльності"
+		}
+	},
+	"item-act": {
+		"assembling": {
+			"en": "Assembling",
+			"ua": "Монтаж"
+		},
+		"dismantling_of_ruins": {
+			"en": "Dismantling of ruins",
+			"ua": "Демонтаж руїн"
+		},
+		"building_materials": {
+			"en": "Building materials",
+			"ua": "Будівельні матеріали"
+		},
+		"construction_equipment": {
+			"en": "Construction equipment",
+			"ua": "Спеціалізована будівельна техніка"
+		},
+		"assistance_to_orphanages": {
+			"en": "Assistance to orphanages",
+			"ua": "Допомога дитячим будинкам"
+		},
+		"logistics": {
+			"en": "Logistics",
+			"ua": "Логістика"
+		},
+		"humanitarian_help": {
+			"en": "Humanitarian help",
+			"ua": "Гуманітарна допомога"
+		},
+		"medical_equipment_and_facilities": {
+			"en": "Medical equipment and facilities",
+			"ua": "Медичне обладнання та засоби"
+		}
+	},
+	"liquidation": {
+		"h2": {
+			"en": "Elimination of the consequences of the war in Ukraine",
+			"ua": "Ліквідація наслідків війни в Україні"
+		},
+		"p1": {
+			"en": "The program on eliminating of consequences of war in Ukraine includes a collection of funds for the restoration of destroyed houses and other buildings in Ukraine, as well as implementing modern architectural solutions, which will consider principles of energy efficiency, safety, and innovation.",
+			"ua": "Програма з ліквідації наслідків війни в Україні включає в себе збір коштів на відновлення зруйнованих будинків та інших споруд в Україні, а також  реалізацію сучасних архітектурних рішень, у яких будуть враховані принципи енергоефективності, безбар’єрності та інноваційності."
+		},
+		"p2": {
+			"en": "The Program’s primary aim is to:<br>- Restoration of settlements of Ukraine and critical infrastructure (construction and reconstruction of non-residential premises, social housing, etc.);<br>- provision of charitable services and help (including, but not limited to, transport, construction, consulting, social, territory improvement services, etc.).",
+			"ua": "Основною метою Програми є:<br>- відновлення населених пунктів України та критичної інфраструктури (здійснення будівництва та реконструкції нежитлових приміщень, соціального жила, тощо);<br>- надання благодійних послуг та допомоги (в тому числі але не виключно - транспортних, будівельних, консультаційних, соціальних, послуг з благоустрою території, тощо)."
+		},
+		"p3": {
+			"en": "The program lasts for five years. The amount needed to implement the program is about US $50 million.<br>The results of implementing this project (reporting) will be published through social networks and on our website in order to promote its goals and objectives.",
+			"ua": "Програма розрахована на п‘ять років. Необхідна сума для реалізації програми: близько 50 млн. доларів США.<br>Висвітлення результатів реалізації даного проекту (звітність) відбуватиметься через соціальні мережі та на нашому сайті з метою популяризації його цілей та мети."
+		},
+		"p4": {
+			"en": "Funds (help), including if the project is not implemented, can be directed to humanitarian aid for the population of Ukraine, purchase of medical equipment and medicines for hospitals, and help orphanages.",
+			"ua": "Внесені кошти (допомога), в тому числі, якщо проект не буде реалізовано, можуть бути направлені на гуманітарну допомогу для населення України, на закупівлю медичного обладнання та засобів для лікарень, а також на допомогу дитячим будинкам."
+		},
+		"p5": {
+			"en": "Persons who provide our support and financial help to our project agree to reallocate/use funds, including in other projects. The amount of donation (help) is not subject to return.",
+			"ua": "Особи, які здійснюють нашу підтримку та надають фінансову допомогу нашому проекту, дають згоду на перерозподіл/використання коштів в тому числі в інших проектах. Сума пожертвування (допомоги) поверненню не підлягає."
+		}
+	},
+	"help-ukraine": {
+		"h2": {
+			"en": "Compassion will save the whole Ukraine!",
+			"ua": "Небайдужість врятує всю Україну!"
+		}
+	},
+	"partners": {
+		"h2": {
+			"en": "We will tell the whole world about your support",
+			"ua": "Розповімо всьому світу про вашу підтримку"
+		},
+		"p": {
+			"en": "Our friends and partners",
+			"ua": "Наші друзі та партнери"
+		}
+	},
+	"contribute": {
+		"h2": {
+			"en": "To contribute",
+			"ua": "Зробити внесок"
+		},
+		"firstname": {
+			"en": "Name",
+			"ua": "Ім’я"
+		},
+		"lastname": {
+			"en": "Surname",
+			"ua": "Прізвище"
+		},
+		"email": {
+			"en": "E-mail",
+			"ua": "E-mail"
+		},
+		"curr": {
+			"en": "Choose currency:",
+			"ua": "Оберіть валюту:"
+		},
+		"choose-amount": {
+			"en": "Choose amount:",
+			"ua": "Оберіть суму:"
+		},
+		"other": {
+			"en": "Other",
+			"ua": "Інша сума"
+		}
+	},
+	"payment": {
+		"h2": {
+			"en": "Payment details",
+			"ua": "Реквізити"
+		}
+	},
+	"details": {
+		"usd": {
+			"en": {
+				"IBAN": "UA793052990000026000016239589",
+				"SWIFT": "PBANUA2X",
+				"Company Name": "CF UKRAYINTSI EDYNI",
+				"Name of the bank": "JSC CB \"PRIVATBANK\", 1D HRUSHEVSKOHO STR., KYIV, 01001, UKRAINE",
+				"Purpose of payment": "Charitable foundation \"Ukrainians united\"",
+				"Company address": "10B HRESCHATIK STR., OFFICE 17, KYIV, 01001, UKRAINE"
+			},
+			"ua": {
+				"IBAN": "UA793052990000026000016239589",
+				"SWIFT": "PBANUA2X",
+				"Назва підприємства": "CF UKRAYINTSI EDYNI",
+				"Назва банку": "JSC CB \"PRIVATBANK\", 1D HRUSHEVSKOHO STR., KYIV, 01001, UKRAINE",
+				"Призначення платежу": "Charitable foundation \"Ukrainians united\"",
+				"Адреса підприємства": "01001, УКРАЇНА, М. КИЇВ, ВУЛ. ХРЕЩАТИК, Б. 10Б, ОФИС 17"
+			}
+		},
+		"uah": {
+			"en": {
+				"Name of the recipient": "БО БФ УКРАЇНЦІ ЄДИНІ ",
+				"Recipient code": "39123734",
+				"IBAN": "UA053052990000026005026225931",
+				"Purpose of payment": "Charitable foundation \"Ukrainians united\"",
+				"Name of the bank": "АТ КБ «ПриватБанк»"
+			},
+			"ua": {
+				"Найменування отримувача": "БО БФ УКРАЇНЦІ ЄДИНІ ",
+				"Код одержувача": "39123734",
+				"IBAN": "UA053052990000026005026225931",
+				"Призначення платежу": "Charitable foundation \"Ukrainians united\"",
+				"Назва банку": "АТ КБ «ПриватБанк»"
+			}
+		},
+		"eur": {
+			"en": {
+				"IBAN": "UA023052990000026000006224270",
+				"SWIFT": "PBANUA2X",
+				"Company Name": "CF UKRAYINTSI EDYNI",
+				"Name of the bank": "JSC CB \"PRIVATBANK\", 1D HRUSHEVSKOHO STR., KYIV, 01001, UKRAINE",
+				"Purpose of payment": "Charitable foundation \"Ukrainians united\"",
+				"Company address": "10B HRESCHATIK STR., OFFICE. 17, KYIV, 01001, UKRAINE"
+			},
+			"ua": {
+				"IBAN": "UA023052990000026000006224270",
+				"SWIFT": "PBANUA2X",
+				"Назва підприємства": "CF UKRAYINTSI EDYNI",
+				"Назва банку": "JSC CB \"PRIVATBANK\", 1D HRUSHEVSKOHO STR., KYIV, 01001, UKRAINE",
+				"Призначення платежу": "Charitable foundation \"Ukrainians united\"",
+				"Адреса підприємства": "01001, УКРАЇНА, М. КИЇВ, ВУЛ. ХРЕЩАТИК, Б. 10Б, ОФИС 17"
+			}
+		}
+	},
+	"assistance": {
+		"h2": {
+			"en": "Request for assistance from the fund",
+			"ua": "Запит на допомогу від фонду"
+		},
+		"fullname": {
+			"en": "Name Surname",
+			"ua": "Ім’я Прізвище"
+		},
+		"organization": {
+			"en": "Organization",
+			"ua": "Організація"
+		},
+		"email": {
+			"en": "E-mail",
+			"ua": "E-mail"
+		},
+		"request_assistance": {
+			"en": "What are the funds for?",
+			"ua": "Для чого потрібні кошти?"
+		}
+	},
+	"contacts": {
+		"en": "Contacts",
+		"ua": "Контакти"
+	},
+	"dir-fund": {
+		"p1": {
+			"en": "charitable foundation<br>\"ukrainians united\"",
+			"ua": "благодійний фонд<br>«Українці Єдині»"
+		}
+	},
+	"adress-fund": {
+		"p1": {
+			"en": "01001, Kyiv,<br>10B Khreshchatyk Street, office 17<br>USREOU code 39123734",
+			"ua": "01001 , м. Київ,<br>вул. Хрещатик, будинок 10Б, офис 17<br>Код ЄДРПОУ 39123734"
+		},
+		"p2": {
+			"en": "Tel: <a href='tel:+380971169981'>+38(097) 116-99-81</a><br>Email: <a href='mailto:ukrainciedini@gmail.com'>ukrainciedini@gmail.com</a>",
+			"ua": "Тел: <a href='tel:+380971169981'>+38(097) 116-99-81</a><br>Email: <a href='mailto:ukrainciedini@gmail.com'>ukrainciedini@gmail.com</a>"
+		}
+	},
+	"memorandum": {
+		"en": "Memorandum",
+		"ua": "Меморандум"
+	}
+}

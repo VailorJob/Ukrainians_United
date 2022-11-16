@@ -1,0 +1,1 @@
+web: gunicorn ukrainians_united:app

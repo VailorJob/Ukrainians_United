@@ -1,0 +1,1067 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+figure,
+figcaption,
+blockquote {
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Futura Bold";
+  src: url("/fonts/FuturaBold.ttf");
+}
+
+@font-face {
+  font-family: "Futura Medium";
+  src: url("/fonts/FuturaMedium.ttf");
+}
+
+@font-face {
+  font-family: "Jura";
+  src: url("/fonts/Jura.ttf");
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Futura Bold";
+  font-style: normal;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+p {
+  font-family: "Jura";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5vw;
+  line-height: 2vw;
+}
+
+input {
+  border: none;
+}
+
+textarea {
+  padding: 15px 10px;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  resize: none;
+}
+
+img {
+  user-select: none;
+  display: block;
+}
+
+button.donate, a.donate {
+  font-family: "Futura Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5vw;
+  cursor: pointer;
+  background: #FFD500;
+  border-radius: 70px;
+  border-style: none;
+  transition: 0.3s;
+  align-self: flex-start;
+  color: #000;
+  padding: 12px 50px;
+  text-decoration: none;
+}
+
+button.donate + img {
+  display: inline-block;
+}
+
+button.donate:hover, a.donate:hover {
+  background: #00448b;
+  color: #FFD500;
+  border-style: none;
+}
+
+label[required]::after {
+  content: "*";
+  color: red;
+  position: absolute;
+  font-size: 30px;
+  right: -15px;
+}
+
+/*Radio*/
+.radio {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+.custom-radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.custom-radio+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.custom-radio+label::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin-right: 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+/* стили при наведении курсора на радио */
+.custom-radio:not(:disabled):not(:checked)+label:hover::before {
+  border-color: #fff580;
+}
+
+/* стили для активной радиокнопки (при нажатии на неё) */
+.custom-radio:not(:disabled):active+label::before {
+  background-color: #fff580;
+}
+
+/* стили для радиокнопки, находящейся в фокусе */
+.custom-radio:focus+label::before {
+  box-shadow: 0 0 0 0.2rem rgba(251, 255, 0, 0.25);
+}
+
+/* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+.custom-radio:focus:not(:checked)+label::before {
+  border-color: #fff580;
+}
+
+/* стили для радиокнопки, находящейся в состоянии checked */
+.custom-radio:checked+label::before {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23ffd500'/%3e%3c/svg%3e");
+}
+
+/* стили для радиокнопки, находящейся в состоянии disabled */
+.custom-radio:disabled+label::before {
+  background-color: #e9ecef;
+}
+/*end Radio*/
+
+/*Radio button*/
+.radio-button {
+  display: inline-block;
+  font-family: "Jura";
+  font-size: 20px;
+}
+
+.custom-radio-button {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.custom-radio-button+label {
+  display: inline-block;
+  background-color: #c4c4c4;
+  color: #000000;
+  border-radius: 5px;
+  padding: 10px;
+  width: -webkit-fill-available;
+  align-items: center;
+  user-select: none;
+}
+
+/* стили при наведении курсора на радио */
+.custom-radio-button:not(:disabled):not(:checked)+label:hover {
+  box-shadow: inset 0 0 0 0.2rem rgba(251, 255, 0, 0.25);
+}
+
+/* стили для активной радиокнопки (при нажатии на неё) */
+.custom-radio-button:not(:disabled):active+label {
+  background-color: #fff580;
+}
+
+/* стили для радиокнопки, находящейся в фокусе */
+.custom-radio-button:focus+label {
+  box-shadow: 0 0 0 0.2rem rgba(251, 255, 0, 0.25);
+}
+
+/* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+.custom-radio-button:focus:not(:checked)+label {
+  background-color: #fff580;
+}
+
+/* стили для радиокнопки, находящейся в состоянии checked */
+.custom-radio-button:checked+label {
+  background-color: #ffd500;
+}
+
+/* стили для радиокнопки, находящейся в состоянии disabled */
+.custom-radio-button:disabled+label {
+  background-color: #e9ecef;
+}
+/*End Radio-button*/
+
+.black-block {
+  background-color: #2C2C2C;
+  color: #fff;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+}
+
+.flex-start {
+  align-items: flex-start;
+}
+
+.gap-10 {
+  gap: 10px;
+}
+
+.gap-15 {
+  gap: 15px;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+.gap-30 {
+  gap: 30px;
+}
+
+.gap-60 {
+  gap: 60px;
+}
+
+.start {
+  justify-content: flex-start;
+  gap: 6vw;
+}
+
+.around {
+  justify-content: space-around;
+}
+
+.between {
+  justify-content: space-between;
+}
+
+.center-text { 
+  text-align: -webkit-center;
+}
+
+.start-text { 
+  text-align: start;
+}
+
+.pad-updown-60 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.pad-updown-80 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.pad-updown-100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.pad-up-20 {
+  padding-top: 20px;
+}
+
+.pad-up-40 {
+  padding-top: 40px;
+}
+
+.pad-up-60 {
+  padding-top: 60px;
+}
+
+.pad-up-80 {
+  padding-top: 80px;
+}
+
+.pad-down-30 {
+  padding-bottom: 30px;
+}
+
+.pad-down-40 {
+  padding-bottom: 40px;
+}
+
+.pad-down-55 {
+  padding-bottom: 55px;
+}
+
+.pad-down-60 {
+  padding-bottom: 60px;
+}
+
+.pad-down-100 {
+  padding-bottom: 100px;
+}
+
+.pad-down-110 {
+  padding-bottom: 110px;
+}
+
+.bold {
+  font-family: "Futura Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 32px;
+}
+
+.light {
+  font-family: "Jura";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+header {
+  background-image: url('/images/flag1.jpg');
+  background-repeat: no-repeat;
+  background-size: 837px 120px;;
+}
+
+.flag-big, .logo {
+  width: 100%;
+  pointer-events: none;
+  user-select: none;
+}
+
+.flag-big {
+  margin-top: 41px;
+  margin-bottom: 100px;
+}
+
+.flag-big-mob {
+  display: none;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.logo {
+  margin: 77px 0 51px 0;
+}
+
+.logo img {
+  height: 107px;
+  margin: auto;
+}
+
+.lang {
+  position: absolute;
+  right: 4vw;
+  top: 6vw;
+}
+
+.lang a {
+  text-transform: uppercase;
+  text-decoration-line: none;
+  font-family: "Futura Medium";
+  font-style: normal;
+  color: #000;
+  font-weight: 500;
+  font-size: 1.6vw;
+}
+
+.banner>img {
+  width: 50%;
+}
+
+.text-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1vw;
+  padding-right: 40px;
+}
+
+.text-banner-p {
+  font-size: 1.4vw;
+  line-height: 1.8vw;
+}
+
+.text-banner>.donate {
+  margin-top: 0.9vw;
+} 
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2.4vw;
+  line-height: 3vw;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.fund-do {
+  font-family: 'Futura Bold';
+  font-style: normal;
+  font-weight: 700;
+  width: 90vw;
+  margin: 0 auto 120px auto;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider h2 {
+  margin-bottom: 61px;
+}
+
+.arrow {
+  display: inline-block;
+  background-color: #2c2c2c9c;
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 1;
+  bottom: 45%;
+}
+
+.arrow:hover {
+  transform: scale(1.2);
+}
+
+.arrow.hide {
+  display: none;
+}
+
+.ar-left {
+  position: absolute;
+  left: 10%;
+}
+
+.ar-right {
+  position: absolute;
+  right: 10%;
+}
+
+.ar-left img {
+  transform: rotate(180deg);
+}
+
+.images {
+  position: relative;
+  width: 65%;
+  margin: auto;
+  overflow: hidden;
+  margin-bottom: 1.8vw;
+}
+
+.images ul {
+  display: flex;
+  white-space: nowrap;
+  padding: 0;
+  margin: 0;
+  transition: 1s;
+}
+
+.images ul li {
+  display: inline-block;
+  position: relative;
+  flex: 0 0 100%;
+}
+
+.images ul li img {
+  width: 100%;
+}
+
+.image-text {
+  display: inline-block;
+  position: absolute;
+  font-size: 3vw;
+  bottom: 60px;
+  left: 0;
+  padding: 16px 85px;
+  background-color: rgba(13, 13, 13, 0.72);
+}
+
+.page {
+  user-select: none;
+}
+
+.page span {
+  display: inline-block;
+  cursor: pointer;
+  width: 0.7vw;
+  height: 0.7vw;
+  border-radius: 100%;
+  background-color: #fff;
+}
+
+.page span.active {
+  background-color: #FFD500;
+}
+
+.activities h2 {
+  padding-bottom: 61px;
+}
+
+.block-act {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5vw;
+  line-height: 31px;
+  text-align: center;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 4vw;
+
+  justify-items: center;
+  margin: 0 6vw;
+}
+
+.block-act .item-act {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5vw;
+}
+
+.liquidation {
+  font-family: 'Futura Bold';
+  font-style: normal;
+  font-weight: 700;
+  width: 868px;
+  margin: 0 auto 80px auto;
+}
+
+.liquidation p {
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.help-ukraine h2 {
+  margin-bottom: 50px;
+}
+
+.partners-logo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.partners p {
+  margin-top: 20px;
+  margin-bottom: 55px;
+}
+
+.partners-logo div {
+  width: 350px;
+}
+
+.partners-logo div img {
+  height: 200px;
+}
+
+.left {
+  width: 30%;
+}
+
+.data-input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.data-input label {
+  align-self: flex-start;
+}
+
+.data-input label, form span {
+  position: relative;
+}
+
+.data-input input, .data-input textarea {
+  padding: 15px 10px;
+  border-radius: 5px;
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+#liqpay_checkout span {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.radio label {
+  font-family: 'Futura Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  align-items: center;
+}
+
+.amount {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+}
+
+.amount .radio-button {
+    text-align: center;
+}
+
+#div-amount {
+  position: relative;
+}
+
+#div-amount::before {
+  content: attr(data-content);
+  display: inline-block;
+  position: absolute;
+  color: #40404078;
+  left: 3%;
+  top: 12%;
+  font-family: "Jura";
+  font-size: 25px;
+}
+
+#amount-get {
+  padding: 8px 40px;
+  width: -webkit-fill-available;
+  font-family: 'Jura';
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+#amount-get:disabled {
+  background-color: #fff;
+  color: #000;
+  opacity: 1;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.payment-metod {
+  text-align: -webkit-right;
+  padding-right: 8vw;
+}
+
+.payment-metod .custom-radio-button+label {
+  font-family: 'Futura Bold';
+  font-weight: 700;
+  background: none;
+  color: #C4C4C4;
+}
+
+.payment-metod .custom-radio-button:checked+label {
+  color: #ffd500;
+}
+
+/* стили при наведении курсора на радио */
+.payment-metod .custom-radio-button:not(:disabled):not(:checked)+label:hover {
+  box-shadow: none;
+}
+
+/* стили для активной радиокнопки (при нажатии на неё) */
+.payment-metod .custom-radio-button:not(:disabled):active+label {
+  background: none;
+}
+
+/* стили для радиокнопки, находящейся в фокусе */
+.payment-metod .custom-radio-button:focus+label {
+  box-shadow: none;
+}
+
+/* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+.payment-metod .custom-radio-button:focus:not(:checked)+label {
+  background: none;
+}
+
+.payment-details {
+  display: none;
+}
+
+.payment-details.active {
+  display: flex;
+}
+
+div.dir-fund p {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 38px;
+}
+
+.dir-fund p:first-of-type {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.adress-fund p {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 38px;
+}
+
+.liqpay-desk {
+  width: 218px;
+}
+
+.liqpay-mob {
+  display: none;
+}
+
+.end-p {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 27px;
+  margin: 0;
+}
+
+span.social {
+  display: block;
+}
+
+span.social a {
+  display: inline-block;
+}
+
+@media (max-width: 1200px) {
+  .amount {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .amount .radio-button.other {
+    grid-column: 2 / 4;
+  }
+}
+
+@media (max-width: 900px) {
+  p {
+    font-size: 2vw;
+    line-height: 2.5vw;
+  }
+
+  .fund-do {
+    width: 95vw;
+  }
+
+  .block-act {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 2vw;
+  }
+
+  .liquidation {
+    width: 95vw;
+  }
+
+  .payment .flex-row.wrap.around {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: stretch;
+    padding: 0 20px;
+    place-self: center;
+  }
+
+  .payment .left {
+    width: auto;
+  }
+}
+
+@media (max-width: 800px) {
+  header {
+    background-image: url('/images/flag-mob.png');
+    background-size: 100% 15%;
+  }
+
+  .flag-big {
+    display: none;
+  }
+
+  .flag-big-mob {
+    display: block;
+  }
+
+  .flex-row.wrap {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: stretch;
+    padding: 0 20px;
+    place-self: center;
+  }
+
+  .left {
+    width: 100%;
+  }
+
+  .logo {
+    margin: 90px 0 20px 0;
+  }
+
+  .logo img {
+    max-height: 15vw;
+    margin: 20px;
+  }
+
+  .banner.flex-row.wrap {
+    padding: 0;
+    align-items: center;
+  }
+
+  .banner>img {
+    width: 100%;
+  }
+
+  .text-banner {
+    width: 90vw;
+  }
+
+  .images {
+    width: 100%;
+  }
+
+  .ar-left {
+    left: 2%;
+  }
+
+  .ar-right {
+    right: 2%;
+  }
+
+  .help-ukraine {
+    padding: 60px 20px;
+  }
+
+  .partners-logo {
+    flex-direction: column;
+  }
+
+  #assistance-form .donate {
+    align-self: center;
+  }
+
+  .dir-fund {
+    align-self: center;
+    text-align: center;
+  }
+
+  .liqpay-mob {
+    display: block;
+    width: 70%;
+    align-self: center;
+  }
+
+  .liqpay-desk {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    background-size: 100% 10%;
+  }
+
+  .lang a {
+    font-size: 6.6vw;
+  }
+
+  button.donate, a.donate {
+    font-size: 5.5vw;
+  }
+
+  h1  {
+    font-size: 7vw;
+    line-height: 8vw;
+  }
+
+  h2 {
+    font-size: 8vw;
+    line-height: 10vw;
+  }
+
+  .text-banner {
+    padding: 0;
+    gap: 5vw;
+  }
+
+  .text-banner-p {
+    font-size: 5.4vw;
+    line-height: 5.8vw;
+  }
+
+  .fund-do {
+    margin-bottom: 60px;
+  }
+
+  .fund-do p {
+    text-align: -webkit-left;
+    font-size: 4.6vw;
+    line-height: 5.6vw;
+  }
+
+  .slider.pad-up-80 {
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+  }
+
+  .slider h2 {
+    margin-bottom: 6vw;
+  }
+
+  .arrow {
+    bottom: 35%;
+  }
+
+  .image-text {
+    bottom: 15%;
+    font-size: 6vw;
+    padding: 3vw 10vw;
+  }
+
+  .page span {
+    width: 3vw;
+    height: 3vw;
+    margin: 0 1vw;
+  }
+
+  .activities h2 {
+    padding-bottom: 7vw;
+  }
+
+  .block-act {
+    font-size: 4.5vw;
+    line-height: 5vw;
+    gap: 8vw;
+  }
+
+  .liquidation p {
+    text-align: -webkit-left;
+    font-size: 4.6vw;
+    line-height: 6.6vw;
+  }
+
+  .partners p {
+    font-size: 5vw;
+  }
+
+  .partners-logo {
+    gap: 5vw;
+  }
+
+  #contribute {
+    padding-top: 12vw;
+    padding-bottom: 12vw;
+  }
+
+  #contribute h2 {
+    padding-bottom: 5vw;
+  }
+
+  #contribute .right {
+    gap: 6vw;
+  }
+
+  .payment {
+    gap: 5vw;
+    padding-bottom: 10vw;
+  }
+
+  .payment-metod {
+    text-align: -webkit-center;
+    padding: 0;
+  }
+
+  .assistance {
+    padding-top: 8vw;
+    padding-bottom: 8vw;
+  }
+
+  .assistance h2 {
+    padding-bottom: 6vw;
+  }
+
+  footer.pad-up-80 {
+    padding-top: 8vw;
+  }
+
+  footer h2.pad-down-60 {
+    padding-bottom: 8vw;
+  }
+
+  .adress-fund {
+    gap: 12vw;
+  }
+
+  .adress-fund p {
+    line-height: 10vw;
+  }
+
+  span.social {
+    padding-top: 3vw;
+  }
+}

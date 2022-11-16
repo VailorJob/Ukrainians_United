@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="{{data['lang_html'][lang]|safe}}">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>{{data["title"][lang]|safe}}</title>
+	<meta property="og:title" content="{{data['title'][lang]|safe}}">
+	<meta name="description" content="{{data['description'][lang]|safe}}">
+	<meta name="og:description" content="{{data['description'][lang]|safe}}">
+	<meta name="robots" content="index,follow">
+	<meta property="og:locale" content="{{data['locale'][lang]|safe}}">
+	<meta property="og:site_name" content="{{data['title'][lang]|safe}}">
+	<meta name="keywords" content="{{data['keywords'][lang]|safe}}">
+	<meta property="og:image" content="{{url_for('static', filename='images/logo_'+lang+'.jpg')}}">
+	<meta property="og:image:width" content="280">
+	<meta property="og:image:height" content="110">
+	<meta property="og:image:type" content="image/jpeg">
+	<link rel="icon" href="{{url_for('static', filename='favicons/favicon.ico')}}">
+	<link rel="icon" href="{{url_for('static', filename='favicons/favicon.svg')}}" type="image/svg+xml">
+	<link rel="apple-touch-icon" href="{{url_for('static', filename='favicons/favicon.png')}}">
+	<link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+	<script defer src="//static.liqpay.ua/libjs/checkout.js"></script>
+	<script defer type="text/javascript" src="{{url_for('static', filename='js/script.js')}}"></script>
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<img src="{{url_for('static', filename='images/logo_'+lang+'.svg')}}" alt="logo">
+		</div>
+		<div class="lang"><a href="/?lang={{data['lang'][lang]|safe}}">{{data["lang"][lang]|safe}}</a></div>
+		<div class="banner flex-row wrap start">
+			<img src="{{url_for('static', filename='images/Ukraine-War-8.jpg')}}" alt="city war">
+			<div class="text-banner">
+				<h1>{{data["text-banner"]["h1"][lang]|safe}}</h1>
+				<p class="text-banner-p">{{data["text-banner"]["p"][lang]|safe}}</p>
+				<a class="donate" href="#contribute">{{data["button-donate"][lang]|safe}}</a>
+			</div>
+		</div>
+		<img class="flag-big" src="{{url_for('static', filename='images/flag-big.png')}}" alt="flag">
+		<img class="flag-big-mob" src="{{url_for('static', filename='images/flag-big-mob.png')}}" alt="flag">
+	</header>
+	<main>
+		<div class="fund-do center-text">
+			<h2 class="pad-down-40">{{data["fund-do"]["h2"][lang]|safe}}</h2>
+			<p>{{data["fund-do"]["p"][lang]|safe}}</p>
+		</div>
+
+		<div class="slider pad-up-80 pad-down-110 black-block center-text">
+			<h2>{{data["slider"]["h2"][lang]|safe}}</h2>
+			<div class="arrow ar-left hide" data-slide="prev">
+				<img src="{{url_for('static', filename='images/icons/arrow.png')}}" alt="arrow-left">
+			</div>
+			<div class="images">
+				<ul>
+					<li class="image active" data-slide="0">
+						<img src="{{url_for('static', filename='images/cities/Irpin.jpg')}}" alt="Irpin">
+						<div class="image-text">
+							<span>{{data["image-span"]["Irpin"][lang]|safe}}</span>
+						</div>
+					</li>
+					<li class="image" data-slide="1">
+						<img src="{{url_for('static', filename='images/cities/Kharkiv.jpg')}}" alt="Kharkiv">
+						<div class="image-text">
+							<span>{{data["image-span"]["Kharkiv"][lang]|safe}}</span>
+						</div>
+					</li>
+					<li class="image" data-slide="2">
+						<img src="{{url_for('static', filename='images/cities/Chernihiv.jpg')}}" alt="Chernihiv">
+						<div class="image-text">
+							<span>{{data["image-span"]["Chernihiv"][lang]|safe}}</span>
+						</div>
+					</li>
+					<li class="image" data-slide="3">
+						<img src="{{url_for('static', filename='images/cities/Mariupol.jpg')}}" alt="Mariupol">
+						<div class="image-text">
+							<span>{{data["image-span"]["Mariupol"][lang]|safe}}</span>
+						</div>
+					</li>
+					<li class="image" data-slide="4">
+						<img src="{{url_for('static', filename='images/cities/Bucha.jpg')}}" alt="Bucha">
+						<div class="image-text">
+							<span>{{data["image-span"]["Bucha"][lang]|safe}}</span>
+						</div>
+					</li>
+					<li class="image" data-slide="5">
+						<img src="{{url_for('static', filename='images/cities/Borodyanka.jpg')}}" alt="Borodyanka">
+						<div class="image-text">
+							<span>{{data["image-span"]["Borodyanka"][lang]|safe}}</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="arrow ar-right" data-slide="next">
+				<img src="{{url_for('static', filename='images/icons/arrow.png')}}" alt="arrow-right">
+			</div>
+			<div class="page">
+				<span class="active" data-slide="0"></span>
+				<span data-slide="1"></span>
+				<span data-slide="2"></span>
+				<span data-slide="3"></span>
+				<span data-slide="4"></span>
+				<span data-slide="5"></span>
+			</div>
+		</div>
+		<div class="activities pad-up-60 center-text">
+			<h2>{{data["activities"]["h2"][lang]|safe}}</h2>
+			<div class="block-act">
+				<div class="item-act">
+					<img src="{{url_for('static', filename='images/icons/crane-hook.png')}}" alt="crane-hook">
+					<span>{{data["item-act"]["assembling"][lang]|safe}}</span>
+				</div>
+				<div class="item-act">
+					<img src="{{url_for('static', filename='images/icons/constructing.png')}}" alt="constructing">
+					<span>{{data["item-act"]["dismantling_of_ruins"][lang]|safe}}</span>
+				</div>
+				<div class="item-act">
+					<img src="{{url_for('static', filename='images/icons/foundation.png')}}" alt="foundation">
+					<span>{{data["item-act"]["building_materials"][lang]|safe}}</span>
+				</div>
+				<div class="item-act">
+					<img src="{{url_for('static', filename='images/icons/bulldozer.png')}}" alt="bulldozer">
+					<span>{{data["item-act"]["construction_equipment"][lang]|safe}}</span>
+				</div>
+				<div class="item-act">
+					<img src="{{url_for('static', filename='images/icons/assistance_to_orphanages.png')}}" alt="assistance_to_orphanages">
+					<span>{{data["item-act"]["assistance_to_orphanages"][lang]|safe}}</span>
+				</div>
+				<div class="item-act">
+					<img src="{{url_for('static', filename='images/icons/truck-weight.png')}}" alt="truck-weight">
+					<span>{{data["item-act"]["logistics"][lang]|safe}}</span>
+				</div>
+				<div class="item-act">
+					<img src="{{url_for('static', filename='images/icons/humanitarian_help.png')}}" alt="humanitarian_help">
+					<span>{{data["item-act"]["humanitarian_help"][lang]|safe}}</span>
+				</div>
+				<div class="item-act">
+					<img src="{{url_for('static', filename='images/icons/medical_equipment_and_facilities.png')}}" alt="medical_equipment_and_facilities">
+					<span>{{data["item-act"]["medical_equipment_and_facilities"][lang]|safe}}</span>
+				</div>
+			</div>
+			<img class="flag-big-mob" src="{{url_for('static', filename='images/flag-big-mob.png')}}" alt="flag">
+		</div>
+		<div class="liquidation center-text">
+			<h2 class="pad-down-40">{{data["liquidation"]["h2"][lang]|safe}}</h2>
+			<div class="start-text">
+				<p>{{data["liquidation"]["p1"][lang]|safe}}</p>
+				<p>{{data["liquidation"]["p2"][lang]|safe}}</p>
+				<p>{{data["liquidation"]["p3"][lang]|safe}}</p>
+				<p>{{data["liquidation"]["p4"][lang]|safe}}</p>
+				<p>{{data["liquidation"]["p5"][lang]|safe}}</p>
+			</div>
+		</div>
+		<div class="help-ukraine pad-up-80 pad-down-100 black-block center-text">
+			<h2>{{data["help-ukraine"]["h2"][lang]|safe}}</h2>
+			<a class="donate" href="#contribute">{{data["button-donate"][lang]|safe}}</a>
+		</div>
+		<div class="partners pad-updown-80 wrap center-text">
+			<h2>{{data["partners"]["h2"][lang]|safe}}</h2>
+			<p>{{data["partners"]["p"][lang]|safe}}</p>
+			<div class="partners-logo">
+				<div>
+					<img src="{{url_for('static', filename='images/partner/monolit.jpg')}}" alt="monolit">
+				</div>
+				<div>
+					<img src="{{url_for('static', filename='images/partner/save_child.jpg')}}" alt="save_child">
+				</div>
+				<div>
+					<img src="{{url_for('static', filename='images/partner/victoria_ecten.jpg')}}" alt="victoria_ecten">
+				</div>
+			</div>
+		</div>
+		<div id="contribute" class="black-block pad-updown-80 flex-column gap-20">
+			<h2 class="center-text pad-down-60">{{data["contribute"]["h2"][lang]|safe}}</h2>
+			<form method="POST" id="liqpay_checkout" action="liqpay">
+  				<input type="hidden" name="action" value="paydonate">
+  				<input type="hidden" name="description" value="Допомога">
+  				<input type="hidden" name="language" value="{{lang}}">
+  				<input type="hidden" name="result_url" value="/">
+				<div class="flex-start flex-row wrap around">
+					<div class="left flex-column gap-10">
+						<div class="data-input">
+							<label for="firstname">{{data["contribute"]["firstname"][lang]}}</label>
+							<input type="text" id="firstname" name="sender_first_name" placeholder='{{data["firstname"][lang]}}'>
+						</div>
+						<div class="data-input">
+							<label for="lastname">{{data["contribute"]["lastname"][lang]}}</label>
+							<input type="text" id="lastname" name="sender_last_name" placeholder='{{data["lastname"][lang]}}'>
+						</div>
+						<div class="data-input">
+							<label for="donat_email">{{data["contribute"]["email"][lang]}}</label>
+							<input type="text" id="donat_email" name="info" placeholder='{{data["email"][lang]}}'>
+						</div>
+					</div>
+
+					<div class="right flex-column gap-10">
+						<div class="flex-column gap-10">
+							<span>{{data["contribute"]["curr"][lang]|safe}}</span>
+							<div class="check-curr">
+								<div class="radio">
+									<input id="curr-USD" class="custom-radio" type="radio" name="currency" value="USD" checked>
+									<label for="curr-USD">USD</label>
+								</div>
+								<div class="radio">
+									<input id="curr-UAH" class="custom-radio" type="radio" name="currency" value="UAH">
+									<label for="curr-UAH">UAH</label>
+								</div>
+								<div class="radio">
+									<input id="curr-EUR" class="custom-radio" type="radio" name="currency" value="EUR">
+									<label for="curr-EUR">EUR</label>
+								</div>
+							</div>
+						</div>
+						<div class="amount-donate flex-column gap-10">
+							<span>{{data["contribute"]["choose-amount"][lang]|safe}}</span>
+							<div class="amount grid">
+								<div class="radio-button" data-value="0">
+									<input id="value-1" class="custom-radio-button" name="value" type="radio" value="20">
+									<label for="value-1">$ 20</label>
+								</div>
+								<div class="radio-button" data-value="1">
+									<input id="value-2" class="custom-radio-button" name="value" type="radio" value="50" checked>
+									<label for="value-2">$ 50</label>
+								</div>
+								<div class="radio-button" data-value="2">
+									<input id="value-3" class="custom-radio-button" name="value" type="radio" value="100">
+									<label for="value-3">$ 100</label>
+								</div>
+								<div class="radio-button" data-value="3">
+									<input id="value-4" class="custom-radio-button" name="value" type="radio" value="200">
+									<label for="value-4">$ 200</label>
+								</div>
+								<div class="radio-button other">
+									<input id="value-5" class="custom-radio-button" name="value" type="radio" value="other">
+									<label for="value-5">{{data["contribute"]["other"][lang]|safe}}</label>
+								</div>
+							</div>
+							<div id="div-amount" data-content="$">
+								<input id="amount-get" name="amount" type="number" value="50" disabled>
+							</div>
+						</div>
+						<div class="flex-row wrap">
+							<button class="donate">{{data["button-donate"][lang]|safe}}</button>
+							<img src="{{url_for('static', filename='images/visa-mc-liq.png')}}" alt="visa-mc-liq">
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="payment pad-down-100 pad-up-20 flex-column gap-60">
+			<div class="payment-metod">
+				<div class="radio-button">
+					<input id="value-uah" class="custom-radio-button" name="change-metod" type="radio" value="uah">
+					<label for="value-uah">UAH</label>
+				</div>
+				<div class="radio-button">
+					<input id="value-usd" class="custom-radio-button" name="change-metod" type="radio" value="usd" checked>
+					<label for="value-usd">USD</label>
+				</div>
+				<div class="radio-button">
+					<input id="value-eur" class="custom-radio-button" name="change-metod" type="radio" value="eur">
+					<label for="value-eur">EUR</label>
+				</div>
+			</div>
+			<h2 class="center-text">{{data["payment"]["h2"][lang]|safe}}</h2>
+			<div id="payment-list">
+				{% for name_curr, details in data["details"].items() %}
+					{% set count = details[lang]|length / 2 %}
+					<div id="payment-{{name_curr}}" class="payment-details flex-row flex-start wrap around{% if loop.index == 1 %} active{% endif %}">
+						<div class="left flex-column gap-30">
+							{% for name, value in details[lang].items() %}
+								{% if loop.index0 < count %}
+									<div class="details">
+										<span class="bold">{{name}}</span>
+										<span class="light">{{value}}</span>
+									</div>
+								{% endif %}
+							{% endfor %}
+						</div>
+						<div class="right flex-column gap-30">
+							{% for name, value in details[lang].items() %}
+								{% if loop.index0 >= count %}
+									<div class="details">
+										<span class="bold">{{name}}</span>
+										<span class="light">{{value}}</span>
+									</div>
+								{% endif %}
+							{% endfor %}
+						</div>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+		<div class="assistance pad-updown-80 black-block flex-column gap-20">
+			<h2 class="center-text pad-down-60">{{data["assistance"]["h2"][lang]|safe}}</h2>
+			<form method="post" id="assistance-form" action="feedback">
+				<div class="flex-start flex-row wrap around">
+					<div class="left flex-column gap-10">
+						<div class="data-input">
+							<label for="fullname" required>{{data["assistance"]["fullname"][lang]}}</label>
+							<input type="text" id="fullname" name="fullname" placeholder='{{data["fullname"][lang]}}' required>
+						</div>
+						<div class="data-input">
+							<label for="organization">{{data["assistance"]["organization"][lang]}}</label>
+							<input type="text" id="organization" name="organization" placeholder='{{data["organization"][lang]}}'>
+						</div>
+						<div class="data-input">
+							<label for="assistance_email" required>{{data["assistance"]["email"][lang]}}</label>
+							<input type="text" id="assistance_email" name="assistance_email" placeholder='{{data["email"][lang]}}' required>
+						</div>
+					</div>
+
+					<div class="right flex-column gap-30">
+						<div class="data-input">
+							<label for="request_assistance" required>{{data["assistance"]["request_assistance"][lang]|safe}}</label>
+							<textarea name="request_assistance" id="request_assistance" cols="50" rows="8" placeholder='{{data["funds_for"][lang]}}' required></textarea>
+						</div>
+						<button class="donate">{{data["button-send"][lang]|safe}}</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</main>
+	<footer class="pad-up-80 pad-down-30">
+		<h2 class="center-text pad-down-60">{{data["contacts"][lang]|safe}}</h2>
+		<div class="contacts flex-start flex-row wrap around">
+			<div class="dir-fund flex-column gap-20">
+				<p>
+					{{data["dir-fund"]["p1"][lang]|safe}}
+					<span class="social">
+						<a href="https://www.facebook.com/" target="_blank"><img src="{{url_for('static', filename='images/icons/facebook.png')}}" alt="facebook"></a>
+						<a href="https://www.instagram.com/" target="_blank"><img src="{{url_for('static', filename='images/icons/instagram.png')}}" alt="instagram"></a>
+					</span>
+				</p>
+				<img class="liqpay-desk" src="{{url_for('static', filename='images/visa-liq-mob.png')}}" alt="visa-liq-mob">
+			</div>
+			<div class="adress-fund flex-column gap-20">
+				<p>{{data["adress-fund"]["p1"][lang]|safe}}</p>
+				<p>
+					{{data["adress-fund"]["p2"][lang]|safe}}
+					<br>
+					<a href="{{url_for('static', filename='files/memorandum.pdf')}}" target="_blank">{{data["memorandum"][lang]|safe}}</a>
+				</p>
+				<img class="liqpay-mob" src="{{url_for('static', filename='images/visa-liq-mob.png')}}" alt="visa-liq-mob">
+			</div>
+		</div>
+		<p class="center-text end-p pad-up-60">All rights reserved 2022</p>
+	</footer>
+</body>
+</html>
