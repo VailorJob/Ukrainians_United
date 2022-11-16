@@ -236,54 +236,54 @@
 	"details": {
 		"usd": {
 			"en": {
-				"IBAN": "UA793052990000026000016239589",
-				"SWIFT": "PBANUA2X",
-				"Company Name": "CF UKRAYINTSI EDYNI",
-				"Name of the bank": "JSC CB \"PRIVATBANK\", 1D HRUSHEVSKOHO STR., KYIV, 01001, UKRAINE",
-				"Purpose of payment": "Charitable foundation \"Ukrainians united\"",
-				"Company address": "10B HRESCHATIK STR., OFFICE 17, KYIV, 01001, UKRAINE"
+				"IBAN": "UA793056655634560016239589",
+				"SWIFT": "PFGHJG2X",
+				"Company Name": "CF UKRSSSSS",
+				"Name of the bank": "JSC CB \"MMMMEEEEE\", 1D GDFGGGFDD STR., KYIV, 123301, UKRAINE",
+				"Purpose of payment": "DDDDDDSSSSSSSS \"Ukrainians united\"",
+				"Company address": "12 FDGGGG., OFFICE 17, KYIV, 012301, UKRAINE"
 			},
 			"ua": {
-				"IBAN": "UA793052990000026000016239589",
-				"SWIFT": "PBANUA2X",
-				"Назва підприємства": "CF UKRAYINTSI EDYNI",
-				"Назва банку": "JSC CB \"PRIVATBANK\", 1D HRUSHEVSKOHO STR., KYIV, 01001, UKRAINE",
-				"Призначення платежу": "Charitable foundation \"Ukrainians united\"",
-				"Адреса підприємства": "01001, УКРАЇНА, М. КИЇВ, ВУЛ. ХРЕЩАТИК, Б. 10Б, ОФИС 17"
+				"IBAN": "UA7930234325236000589",
+				"SWIFT": "PDGGFGHA2X",
+				"Назва підприємства": "CF UKRSSSSS",
+				"Назва банку": "JSC CB \"MMMMEEEEE\", 1D GGDDDDDDD STR., KYIV, 1111222, UKRAINE",
+				"Призначення платежу": "DDDDDDSSSSSSSS \"Ukrainians united\"",
+				"Адреса підприємства": "1111222, УКРАЇНА, М. КИЇВ, ВУЛ. HGFDSDFG, 12Б, ОФИС 17"
 			}
 		},
 		"uah": {
 			"en": {
-				"Name of the recipient": "БО БФ УКРАЇНЦІ ЄДИНІ ",
-				"Recipient code": "39123734",
-				"IBAN": "UA053052990000026005026225931",
-				"Purpose of payment": "Charitable foundation \"Ukrainians united\"",
+				"Name of the recipient": "FGGDDFDFGGG ",
+				"Recipient code": "11111111",
+				"IBAN": "UA05301243241245232346225931",
+				"Purpose of payment": "DDDDDDSSSSSSSS \"Ukrainians united\"",
 				"Name of the bank": "АТ КБ «ПриватБанк»"
 			},
 			"ua": {
 				"Найменування отримувача": "БО БФ УКРАЇНЦІ ЄДИНІ ",
-				"Код одержувача": "39123734",
-				"IBAN": "UA053052990000026005026225931",
-				"Призначення платежу": "Charitable foundation \"Ukrainians united\"",
+				"Код одержувача": "111111111",
+				"IBAN": "UA05305299000002623436225931",
+				"Призначення платежу": "DDDDDDSSSSSSSS \"Ukrainians united\"",
 				"Назва банку": "АТ КБ «ПриватБанк»"
 			}
 		},
 		"eur": {
 			"en": {
-				"IBAN": "UA023052990000026000006224270",
-				"SWIFT": "PBANUA2X",
-				"Company Name": "CF UKRAYINTSI EDYNI",
-				"Name of the bank": "JSC CB \"PRIVATBANK\", 1D HRUSHEVSKOHO STR., KYIV, 01001, UKRAINE",
-				"Purpose of payment": "Charitable foundation \"Ukrainians united\"",
-				"Company address": "10B HRESCHATIK STR., OFFICE. 17, KYIV, 01001, UKRAINE"
+				"IBAN": "UA02305291241200006224270",
+				"SWIFT": "PHGFDUA2X",
+				"Company Name": "CF UKRSSSSS",
+				"Name of the bank": "JSC CB \"MMMMEEEEE\", 1D HRUSHEVSKOHO STR., KYIV, 1111222, UKRAINE",
+				"Purpose of payment": "DDDDDDSSSSSSSS \"Ukrainians united\"",
+				"Company address": "10B DGGHGHHHS STR., OFFICE. 17, KYIV, 1111222, UKRAINE"
 			},
 			"ua": {
-				"IBAN": "UA023052990000026000006224270",
-				"SWIFT": "PBANUA2X",
-				"Назва підприємства": "CF UKRAYINTSI EDYNI",
-				"Назва банку": "JSC CB \"PRIVATBANK\", 1D HRUSHEVSKOHO STR., KYIV, 01001, UKRAINE",
-				"Призначення платежу": "Charitable foundation \"Ukrainians united\"",
-				"Адреса підприємства": "01001, УКРАЇНА, М. КИЇВ, ВУЛ. ХРЕЩАТИК, Б. 10Б, ОФИС 17"
+				"IBAN": "UA02323546506224270",
+				"SWIFT": "PGFDERT",
+				"Назва підприємства": "CF UKRSSSSS",
+				"Назва банку": "JSC CB \"MMMMEEEEE\", 1D HRUSHEVSKOHO STR., KYIV, 1111222, UKRAINE",
+				"Призначення платежу": "DDDDDDSSSSSSSS \"Ukrainians united\"",
+				"Адреса підприємства": "1111222, УКРАЇНА, М. КИЇВ, ВУЛ. DFGHJGF, 10Б, ОФИС 17"
 			}
 		}
 	},
@@ -315,18 +315,18 @@
 	},
 	"dir-fund": {
 		"p1": {
-			"en": "charitable foundation<br>\"ukrainians united\"",
+			"en": "DDDDDDSSSSSSSS<br>\"ukrainians united\"",
 			"ua": "благодійний фонд<br>«Українці Єдині»"
 		}
 	},
 	"adress-fund": {
 		"p1": {
-			"en": "01001, Kyiv,<br>10B Khreshchatyk Street, office 17<br>USREOU code 39123734",
-			"ua": "01001 , м. Київ,<br>вул. Хрещатик, будинок 10Б, офис 17<br>Код ЄДРПОУ 39123734"
+			"en": "1111222, Kyiv,<br>18B DFGHJHGF Street, office 18<br>USREOU code 12432535",
+			"ua": "1111222 , м. Київ,<br>вул. DRTYHJRED, будинок 16Б, офис 11<br>Код ЄДРПОУ 12432535"
 		},
 		"p2": {
-			"en": "Tel: <a href='tel:+380971169981'>+38(097) 116-99-81</a><br>Email: <a href='mailto:ukrainciedini@gmail.com'>ukrainciedini@gmail.com</a>",
-			"ua": "Тел: <a href='tel:+380971169981'>+38(097) 116-99-81</a><br>Email: <a href='mailto:ukrainciedini@gmail.com'>ukrainciedini@gmail.com</a>"
+			"en": "Tel: <a href='tel:+380971312121'>+38(097) 111-11-11</a><br>Email: <a href='sdfg:asdfg@gmail.com'>sdfgh@gmail.com</a>",
+			"ua": "Тел: <a href='tel:+380923112381'>+38(097) 111-11-11</a><br>Email: <a href='ASD:asdfg@gmail.com'>sdfgh@gmail.com</a>"
 		}
 	},
 	"memorandum": {
